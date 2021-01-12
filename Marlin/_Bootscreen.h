@@ -7,6 +7,7 @@
 #pragma once
 
 #define CUSTOM_BOOTSCREEN_BMPWIDTH  88
+#define CUSTOM_BOOTSCREEN_TIMEOUT 10000
 
 const unsigned char custom_start_bmp[] PROGMEM = {
   0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
