@@ -3,7 +3,9 @@
  * Contents will be REPLACED by future processing!
  * Use genallfont.sh to generate font data for updated languages.
  */
-#include <U8glib.h>
+#pragma once
+
+#include "langdata.h"
 
 const u8g_fntpgm_uint8_t fontpage_2_158_159[49] U8G_FONT_SECTION("fontpage_2_158_159") = {
   0x00,0x0c,0x0f,0x00,0xfe,0x00,0x00,0x00,0x00,0x00,0x9e,0x9f,0x00,0x0a,0xfe,0x00,
@@ -19,9 +21,8 @@ const u8g_fntpgm_uint8_t fontpage_2_222_223[45] U8G_FONT_SECTION("fontpage_2_222
   0x00,0x05,0x09,0x09,0x06,0x00,0xfe,0x70,0x88,0x80,0x70,0x08,0x88,0x70,0x10,0x60,
   0x05,0x07,0x07,0x06,0x00,0xfe,0x78,0x80,0x70,0x08,0xf0,0x10,0x60};
 
-#define FONTDATA_ITEM(page, begin, end, data) { page, begin, end, COUNT(data), data }
-static const uxg_fontinfo_t g_fontinfo[] PROGMEM = {
-    FONTDATA_ITEM(2, 158, 159, fontpage_2_158_159), // 'Ğ' -- 'ğ'
-    FONTDATA_ITEM(2, 176, 177, fontpage_2_176_177), // 'İ' -- 'ı'
-    FONTDATA_ITEM(2, 222, 223, fontpage_2_222_223), // 'Ş' -- 'ş'
+static const uxg_fontinfo_t g_fontinfo_tr[] PROGMEM = {
+  FONTDATA_ITEM(2, 158, 159, fontpage_2_158_159), // 'Ğ' -- 'ğ'
+  FONTDATA_ITEM(2, 176, 177, fontpage_2_176_177), // 'İ' -- 'ı'
+  FONTDATA_ITEM(2, 222, 223, fontpage_2_222_223), // 'Ş' -- 'ş'
 };

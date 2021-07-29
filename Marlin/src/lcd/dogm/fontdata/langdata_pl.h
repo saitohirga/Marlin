@@ -3,7 +3,9 @@
  * Contents will be REPLACED by future processing!
  * Use genallfont.sh to generate font data for updated languages.
  */
-#include <U8glib.h>
+#pragma once
+
+#include "langdata.h"
 
 const u8g_fntpgm_uint8_t fontpage_2_132_133[45] U8G_FONT_SECTION("fontpage_2_132_133") = {
   0x00,0x0c,0x0f,0x00,0xfe,0x00,0x00,0x00,0x00,0x00,0x84,0x85,0x00,0x07,0xfe,0x00,
@@ -29,12 +31,11 @@ const u8g_fntpgm_uint8_t fontpage_2_252_252[30] U8G_FONT_SECTION("fontpage_2_252
   0x00,0x0c,0x0f,0x00,0xfe,0x00,0x00,0x00,0x00,0x00,0xfc,0xfc,0x00,0x07,0x00,0x00,
   0x00,0x05,0x07,0x07,0x06,0x00,0x00,0x20,0x00,0xf8,0x10,0x20,0x40,0xf8};
 
-#define FONTDATA_ITEM(page, begin, end, data) { page, begin, end, COUNT(data), data }
-static const uxg_fontinfo_t g_fontinfo[] PROGMEM = {
-    FONTDATA_ITEM(2, 132, 133, fontpage_2_132_133), // 'Ą' -- 'ą'
-    FONTDATA_ITEM(2, 135, 135, fontpage_2_135_135), // 'ć' -- 'ć'
-    FONTDATA_ITEM(2, 153, 153, fontpage_2_153_153), // 'ę' -- 'ę'
-    FONTDATA_ITEM(2, 193, 196, fontpage_2_193_196), // 'Ł' -- 'ń'
-    FONTDATA_ITEM(2, 218, 219, fontpage_2_218_219), // 'Ś' -- 'ś'
-    FONTDATA_ITEM(2, 252, 252, fontpage_2_252_252), // 'ż' -- 'ż'
+static const uxg_fontinfo_t g_fontinfo_pl[] PROGMEM = {
+  FONTDATA_ITEM(2, 132, 133, fontpage_2_132_133), // 'Ą' -- 'ą'
+  FONTDATA_ITEM(2, 135, 135, fontpage_2_135_135), // 'ć' -- 'ć'
+  FONTDATA_ITEM(2, 153, 153, fontpage_2_153_153), // 'ę' -- 'ę'
+  FONTDATA_ITEM(2, 193, 196, fontpage_2_193_196), // 'Ł' -- 'ń'
+  FONTDATA_ITEM(2, 218, 219, fontpage_2_218_219), // 'Ś' -- 'ś'
+  FONTDATA_ITEM(2, 252, 252, fontpage_2_252_252), // 'ż' -- 'ż'
 };
