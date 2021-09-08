@@ -1,6 +1,6 @@
 /**
  * Marlin 3D Printer Firmware
- * Copyright (c) 2020 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
+ * Copyright (c) 2021 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
  *
  * Based on Sprinter and grbl.
  * Copyright (c) 2011 Camiel Gubbels / Erik van der Zalm
@@ -22,10 +22,7 @@
 #pragma once
 
 /*****************************************************************************
-  * @file     rotary_encoder.h
-  * @author   LEO / Creality3D
-  * @date     2019/07/06
-  * @version  2.0.1
+  * @file     lcd/e3v2/jyersui/rotary_encoder.h
   * @brief    Rotary encoder functions
   ****************************************************************************/
 
